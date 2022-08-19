@@ -36,6 +36,10 @@
   font-weight: 800;
 }
 
+#page-map .leaflet-container {
+  z-index: 5;
+}
+
 #page-map .create-orphanage {
   position: absolute;
   right: 40px;
@@ -48,6 +52,7 @@
   justify-content: center;
   border-radius: 20px;
   transition: background 400ms;
+  z-index: 10;
 }
 
 #page-map .create-orphanage:hover {
