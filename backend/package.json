@@ -5,7 +5,8 @@
   "main": "src/server.ts",
   "scripts": {
     "start": "ts-node .",
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn ."
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn .",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "keywords": [],
   "author": "Rayan Wilbert",
@@ -14,7 +15,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "sqlite3": "^5.0.11",
-    "typeorm": "^0.3.7"
+    "typeorm": "^0.2.28"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
