@@ -13,14 +13,10 @@ export default {
   },
   async show(request: Request, response: Response) {
     const orphanagesRepository = getRepository(Orphanage);
-    try {
-      const orphanage = await orphanagesRepository.findOneOrFail(request.params.id, {
-        relations: ['images']
-      });
-      return response.json(orphanageView.render(orphanage));
-    } catch (error) {
-      return response.status(404).json({ message: 'Orphanage not found!' });
-    }
+    const orphanage = await orphanagesRepository.findOneOrFail(request.params.id, {
+      relations: ['images']
+    });
+    return response.json(orphanageView.render(orphanage));
   },
   async create(request: Request, response: Response) {
     const {
