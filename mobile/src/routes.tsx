@@ -12,7 +12,12 @@ type RootStackParamList = {
   OrphanagesMap: undefined;
   OrphanageDetails: { id: number; };
   SelectMapPosition: undefined;
-  OrphanageData: undefined;
+  OrphanageData: { 
+    position: { 
+        latitude: number;
+        longitude: number;
+    }
+  };
 };
 
 type ScreenProps = StackNavigationProp<RootStackParamList>;
