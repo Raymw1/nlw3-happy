@@ -10,7 +10,7 @@ import Header from './components/Header';
 
 type RootStackParamList = {
   OrphanagesMap: undefined;
-  OrphanageDetails: undefined;
+  OrphanageDetails: { id: number; };
   SelectMapPosition: undefined;
   OrphanageData: undefined;
 };
